@@ -40,7 +40,7 @@ function Projects() {
               title="Chat-App"
               description="Real-Time Chat Application built with MERN stack and Socket.IO enables instant one-to-one and group messaging with secure JWT authentication. Features include typing indicators, online status, and persistent MongoDB storage. Responsive React.js frontend with Tailwind CSS ensures seamless user experience across devices. Scalable backend supports future enhancements."
               ghLink="https://github.com/haxzh/chat-app"
-              // demoLink="https://blogs.soumya-jit.tech/"
+              demoLink="https://chat-app-frontend-one-flax.vercel.app/"
             />
           </Col>
 
