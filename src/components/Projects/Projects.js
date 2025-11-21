@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import leaf from "../../Assets/Projects/leaf.png";
+import event from "../../Assets/Projects/event.png";
 // import emotion from "../../Assets/Projects/emotion.png";
 import Digitalclock from "../../Assets/Projects/digital_clock.png";
 import ems from "../../Assets/Projects/ems.png";
@@ -55,18 +55,18 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={event}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="EventSphere"
+              description="EventSphere is a full-stack event management system built with React and Node.js. It enables organizers to create events, manage tickets, and track registrations. Users can browse events, buy tickets, and receive confirmations. Secure APIs, real-time updates, and a clean UI ensure smooth, efficient event handling."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+         {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
