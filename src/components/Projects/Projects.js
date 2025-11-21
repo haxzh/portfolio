@@ -51,7 +51,7 @@ function Projects() {
               title="Digital Clock"
               description="Digital Clock Application developed with Django displays real-time date and time using dynamic rendering. Features include responsive design, automatic updates without page reload, and customizable time formats. Built with HTML, CSS, and JavaScript on the frontend, and Django backend for smooth performance and easy deployment."
               ghLink="https://github.com/haxzh/Digitalclock"
-              // demoLink="https://editor.soumya-jit.tech/"
+              // demoLink=""
             />
           </Col>
 
@@ -61,8 +61,8 @@ function Projects() {
               isBlog={false}
               title="EventSphere"
               description="EventSphere is a full-stack event management system built with React and Node.js. It enables organizers to create events, manage tickets, and track registrations. Users can browse events, buy tickets, and receive confirmations. Secure APIs, real-time updates, and a clean UI ensure smooth, efficient event handling."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              ghLink="https://github.com/haxzh/EventSphere"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
