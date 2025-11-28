@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import event from "../../Assets/Projects/event.png";
-// import emotion from "../../Assets/Projects/emotion.png";
+import task from "../../Assets/Projects/task.png";
 import Digitalclock from "../../Assets/Projects/digital_clock.png";
 import ems from "../../Assets/Projects/ems.png";
 // import suicide from "../../Assets/Projects/suicide.png";
@@ -66,18 +66,18 @@ function Projects() {
             />
           </Col>
 
-         {/* <Col md={4} className="project-card">
+         <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={task}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Smart-Task-Analyzer"
+              description="The Smart Task Analyzer is a Django-based task prioritization system that scores tasks using urgency, importance, effort, and dependencies.The frontend enables easy task input and displays ranked results, delivering an intelligent and user-friendly productivity tool."
+              ghLink="https://github.com/haxzh/smart-task-analyzer"
+              
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
