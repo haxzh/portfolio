@@ -21,6 +21,7 @@ const TOP_TECH_FILTERS = [
   "Python",
   "Django",
   "Flask",
+  "Streamlit",
   "RAG",
   "Supabase",
   "OpenCV",

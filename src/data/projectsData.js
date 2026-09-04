@@ -8,6 +8,7 @@ import aiFaceAttendance from "../Assets/Projects/AI Face Recognition.png";
 import locaaAi from "../Assets/Projects/LocaaAi.png";
 import autoSendMail from "../Assets/Projects/AutoSendMail.png";
 import solarForecasting from "../Assets/Projects/Solar Energy Production Forecasting System.png";
+import weather from "../Assets/Projects/weather.png";
 
 export const projectsData = [
   {
@@ -209,6 +210,27 @@ export const projectsData = [
     ghLink: "https://github.com/haxzh/Digitalclock",
     demoLink: "",
     featured: false
+  },
+  {
+    id: "skyflow-weather-dashboard",
+    title: "SkyFlow - Premium Weather Dashboard",
+    category: "Python / Django",
+    badge: "Streamlit App",
+    imgPath: weather,
+    summary: "Modern, responsive weather dashboard with dynamic glassmorphism UI, micro-animations, AQI tracking, Windy maps, and PDF export.",
+    description: "SkyFlow is a modern, professional, and fully responsive Weather Dashboard built using Streamlit and Python. It offers a premium SaaS-like user experience featuring dynamic weather gradients, condition-adaptive micro-animations, interactive Plotly visualizations, live city comparisons, custom-designed metrics cards, Windy.com interactive maps, and a built-in PDF report download option.",
+    features: [
+      "Premium UI/UX Design: Custom CSS-infused glassmorphism theme, rounded card containers, modern typography (Google Fonts Outfit), and dynamic weather-adaptive micro-animations (rain, clouds, snow, twinkling stars)",
+      "Detailed Live Metrics: Displays real-time temperature, Feels Like temperature, weather descriptions, wind velocity & direction, humidity, barometric pressure, UV index, and sunrise/sunset times",
+      "Scrollable Hourly & 7-Day Forecast: 24-hour horizontal scrolling forecast of temperatures and a weekly outlook detailing high/low limits, weather condition summaries, and rain probabilities",
+      "Air Quality Index (AQI): Features US-EPA AQI category indicators along with individual pollutant concentration values (PM2.5, PM10, CO, NO2, O3, SO2)",
+      "Interactive Weather Maps & Geolocation: Embeds a live Windy.com interactive radar map centered on coordinates and auto-detects user location on startup via IP geolocation",
+      "City Weather Comparison & PDF Exporter: Compare two cities side-by-side on all metrics/AQI scales, plus in-memory compilation and download of structured PDF summaries using ReportLab"
+    ],
+    techStack: ["Python", "Streamlit", "Plotly", "Pandas", "ReportLab", "WeatherAPI", "CSS3", "HTML5"],
+    ghLink: "https://github.com/haxzh/SkyFlow",
+    demoLink: "",
+    featured: true
   }
 ];
 
