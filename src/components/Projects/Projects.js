@@ -115,9 +115,8 @@ function Projects() {
               return (
                 <button
                   key={cat}
-                  className={`category-filter-btn ${
-                    selectedCategory === cat ? "active" : ""
-                  }`}
+                  className={`category-filter-btn ${selectedCategory === cat ? "active" : ""
+                    }`}
                   onClick={() => handleCategoryChange(cat)}
                 >
                   {cat} <span className="cat-count">{count}</span>
@@ -186,9 +185,8 @@ function Projects() {
             {TOP_TECH_FILTERS.map((tech) => (
               <button
                 key={tech}
-                className={`tech-chip-filter-btn ${
-                  selectedTech === tech ? "active" : ""
-                }`}
+                className={`tech-chip-filter-btn ${selectedTech === tech ? "active" : ""
+                  }`}
                 onClick={() => handleTechChange(tech)}
               >
                 {tech}
