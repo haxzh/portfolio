@@ -9,8 +9,8 @@ function Type() {
           "Full Stack Web Developer",
           "MERN Stack Specialist",
           "Python & Django Engineer",
-          "Open Source Contributor",
-          "Passionate Problem Solver"
+          "Passionate Problem Solver",
+          "Ai Engineer"
         ],
         autoStart: true,
         loop: true,
