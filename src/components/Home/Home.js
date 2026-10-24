@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/about.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -47,7 +47,7 @@ function Home() {
               </div>
 
               <p className="hero-bio-text mb-4">
-                Full-stack & AI Systems engineer architecting intelligent platforms with <strong>React, Next.js 16</strong>, <strong>Python/Django</strong>, and <strong>Hybrid RAG</strong> pipelines. Passionate about solving complex problems with clean code and high performance.
+                I build thoughtful digital products and dependable web systems with <strong>React, Next.js</strong>, and <strong>Python</strong>. I care about clear interfaces, useful details, and code that stays easy to work with.
               </p>
 
               {/* Action Buttons */}
@@ -147,9 +147,12 @@ function Home() {
                   <div className="hero-img-glow-wrap">
                     <img
                       src={homeLogo}
-                      alt="home illustration"
+                      alt="Harsh working on a laptop"
                       className="img-fluid hero-main-img"
                       style={{ maxHeight: "380px" }}
+                      onError={(event) => {
+                        event.currentTarget.src = "/Images/readme-img.png";
+                      }}
                     />
                   </div>
                 )}

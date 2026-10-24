@@ -15,7 +15,7 @@ function Particle() {
             },
           },
           color: {
-            value: ["#c084f5", "#818cf8", "#38bdf8", "#ec4899"],
+            value: ["#e76f51", "#e9c46a", "#f4a261"],
           },
           shape: {
             type: "circle",
@@ -40,8 +40,8 @@ function Particle() {
           line_linked: {
             enable: true,
             distance: 140,
-            color: "#a855f7",
-            opacity: 0.12,
+            color: "#e76f51",
+            opacity: 0.08,
             width: 0.8,
           },
           move: {

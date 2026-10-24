@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import myImg from "../../Assets/avtaar.jpg";
 import Tilt from "react-parallax-tilt";
 import {
@@ -9,9 +10,12 @@ import {
   AiFillLinkedin
 } from "react-icons/ai";
 import { DiReact, DiNodejs, DiPython, DiMongodb } from "react-icons/di";
-import { FiUserCheck, FiCpu, FiLayers, FiDatabase, FiTrendingUp } from "react-icons/fi";
+import { FiUserCheck, FiCpu, FiLayers, FiDatabase, FiTrendingUp, FiArrowUpRight } from "react-icons/fi";
+import { projectsData } from "../../data/projectsData";
 
 function Home2() {
+  const featuredProjects = projectsData.filter((project) => project.featured).slice(0, 3);
+
   return (
     <Container fluid className="home-about-section" id="about-preview">
       <Container>
@@ -105,6 +109,43 @@ function Home2() {
             </div>
           </Col>
         </Row>
+
+        <section className="home-projects-preview" aria-labelledby="selected-work-heading">
+          <div className="home-projects-heading">
+            <div>
+              <div className="section-badge-tag mb-3">
+                <FiLayers className="me-2" /> SELECTED WORK
+              </div>
+              <h2 id="selected-work-heading" className="section-title-large mb-2">
+                Things I&apos;ve <span className="purple">built</span>
+              </h2>
+              <p className="home-projects-intro">
+                A few projects that show how I think, design, and solve real problems.
+              </p>
+            </div>
+            <Button as={Link} to="/project" className="home-projects-all-btn">
+              See all projects <FiArrowUpRight />
+            </Button>
+          </div>
+
+          <Row className="g-4">
+            {featuredProjects.map((project) => (
+              <Col lg={4} md={6} key={project.id}>
+                <Link to="/project" className="home-project-preview-card">
+                  <div className="home-project-image-wrap">
+                    <img src={project.imgPath} alt={project.title} loading="lazy" />
+                  </div>
+                  <div className="home-project-preview-content">
+                    <span>{project.category}</span>
+                    <h3>{project.title}</h3>
+                    <p>{project.summary}</p>
+                    <strong>View project <FiArrowUpRight /></strong>
+                  </div>
+                </Link>
+              </Col>
+            ))}
+          </Row>
+        </section>
 
         {/* Social Connect Banner */}
         <Row className="mt-5 pt-3">

@@ -8,9 +8,6 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import ScrollProgress from "./components/ScrollProgress";
-import SpotlightGlow from "./components/SpotlightGlow";
-import ThemeCustomizer from "./components/ThemeCustomizer";
-import AIAssistant from "./components/AIAssistant";
 import CommandPalette from "./components/CommandPalette";
 import {
   BrowserRouter as Router,
@@ -48,19 +45,15 @@ function App() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
-  const handleOpenCommandPalette = () => setIsCmdOpen(true);
   const handleCloseCommandPalette = () => setIsCmdOpen(false);
 
   return (
     <Router>
       <ScrollProgress />
-      <SpotlightGlow />
-      <ThemeCustomizer />
-      <AIAssistant />
       <CommandPalette isOpen={isCmdOpen} onClose={handleCloseCommandPalette} />
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar onOpenCommandPalette={handleOpenCommandPalette} />
+        <Navbar onOpenCommandPalette={() => setIsCmdOpen(true)} />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
